@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EEF578624657E43002A580A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578524657E43002A580A /* AppDelegate.swift */; };
+		8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578724657E43002A580A /* SceneDelegate.swift */; };
+		8EEF578A24657E43002A580A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578924657E43002A580A /* ViewController.swift */; };
+		8EEF578D24657E43002A580A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF578B24657E43002A580A /* Main.storyboard */; };
+		8EEF578F24657E43002A580A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF578E24657E43002A580A /* Assets.xcassets */; };
+		8EEF579224657E43002A580A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF579024657E43002A580A /* LaunchScreen.storyboard */; };
+		8EEF579D24657E43002A580A /* phoneticGuidesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF579C24657E43002A580A /* phoneticGuidesAppTests.swift */; };
+		8EEF57A824657E43002A580A /* phoneticGuidesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF57A724657E43002A580A /* phoneticGuidesAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EEF579924657E43002A580A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EEF577A24657E43002A580A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EEF578124657E43002A580A;
+			remoteInfo = phoneticGuidesApp;
+		};
+		8EEF57A424657E43002A580A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EEF577A24657E43002A580A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EEF578124657E43002A580A;
+			remoteInfo = phoneticGuidesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EEF578224657E43002A580A /* phoneticGuidesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneticGuidesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEF578524657E43002A580A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EEF578724657E43002A580A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8EEF578924657E43002A580A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EEF578C24657E43002A580A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EEF578E24657E43002A580A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EEF579124657E43002A580A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EEF579324657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EEF579824657E43002A580A /* phoneticGuidesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoneticGuidesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEF579C24657E43002A580A /* phoneticGuidesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneticGuidesAppTests.swift; sourceTree = "<group>"; };
+		8EEF579E24657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EEF57A324657E43002A580A /* phoneticGuidesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoneticGuidesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEF57A724657E43002A580A /* phoneticGuidesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneticGuidesAppUITests.swift; sourceTree = "<group>"; };
+		8EEF57A924657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EEF577F24657E43002A580A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEF579524657E43002A580A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEF57A024657E43002A580A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EEF577924657E43002A580A = {
+			isa = PBXGroup;
+			children = (
+				8EEF578424657E43002A580A /* phoneticGuidesApp */,
+				8EEF579B24657E43002A580A /* phoneticGuidesAppTests */,
+				8EEF57A624657E43002A580A /* phoneticGuidesAppUITests */,
+				8EEF578324657E43002A580A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EEF578324657E43002A580A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF578224657E43002A580A /* phoneticGuidesApp.app */,
+				8EEF579824657E43002A580A /* phoneticGuidesAppTests.xctest */,
+				8EEF57A324657E43002A580A /* phoneticGuidesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EEF578424657E43002A580A /* phoneticGuidesApp */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF578524657E43002A580A /* AppDelegate.swift */,
+				8EEF578724657E43002A580A /* SceneDelegate.swift */,
+				8EEF578924657E43002A580A /* ViewController.swift */,
+				8EEF578B24657E43002A580A /* Main.storyboard */,
+				8EEF578E24657E43002A580A /* Assets.xcassets */,
+				8EEF579024657E43002A580A /* LaunchScreen.storyboard */,
+				8EEF579324657E43002A580A /* Info.plist */,
+			);
+			path = phoneticGuidesApp;
+			sourceTree = "<group>";
+		};
+		8EEF579B24657E43002A580A /* phoneticGuidesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF579C24657E43002A580A /* phoneticGuidesAppTests.swift */,
+				8EEF579E24657E43002A580A /* Info.plist */,
+			);
+			path = phoneticGuidesAppTests;
+			sourceTree = "<group>";
+		};
+		8EEF57A624657E43002A580A /* phoneticGuidesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF57A724657E43002A580A /* phoneticGuidesAppUITests.swift */,
+				8EEF57A924657E43002A580A /* Info.plist */,
+			);
+			path = phoneticGuidesAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EEF578124657E43002A580A /* phoneticGuidesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEF57AC24657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesApp" */;
+			buildPhases = (
+				8EEF577E24657E43002A580A /* Sources */,
+				8EEF577F24657E43002A580A /* Frameworks */,
+				8EEF578024657E43002A580A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phoneticGuidesApp;
+			productName = phoneticGuidesApp;
+			productReference = 8EEF578224657E43002A580A /* phoneticGuidesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EEF579724657E43002A580A /* phoneticGuidesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEF57AF24657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesAppTests" */;
+			buildPhases = (
+				8EEF579424657E43002A580A /* Sources */,
+				8EEF579524657E43002A580A /* Frameworks */,
+				8EEF579624657E43002A580A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EEF579A24657E43002A580A /* PBXTargetDependency */,
+			);
+			name = phoneticGuidesAppTests;
+			productName = phoneticGuidesAppTests;
+			productReference = 8EEF579824657E43002A580A /* phoneticGuidesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EEF57A224657E43002A580A /* phoneticGuidesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEF57B224657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesAppUITests" */;
+			buildPhases = (
+				8EEF579F24657E43002A580A /* Sources */,
+				8EEF57A024657E43002A580A /* Frameworks */,
+				8EEF57A124657E43002A580A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EEF57A524657E43002A580A /* PBXTargetDependency */,
+			);
+			name = phoneticGuidesAppUITests;
+			productName = phoneticGuidesAppUITests;
+			productReference = 8EEF57A324657E43002A580A /* phoneticGuidesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EEF577A24657E43002A580A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = tukuyo;
+				TargetAttributes = {
+					8EEF578124657E43002A580A = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8EEF579724657E43002A580A = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 8EEF578124657E43002A580A;
+					};
+					8EEF57A224657E43002A580A = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 8EEF578124657E43002A580A;
+					};
+				};
+			};
+			buildConfigurationList = 8EEF577D24657E43002A580A /* Build configuration list for PBXProject "phoneticGuidesApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EEF577924657E43002A580A;
+			productRefGroup = 8EEF578324657E43002A580A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EEF578124657E43002A580A /* phoneticGuidesApp */,
+				8EEF579724657E43002A580A /* phoneticGuidesAppTests */,
+				8EEF57A224657E43002A580A /* phoneticGuidesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EEF578024657E43002A580A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEF579224657E43002A580A /* LaunchScreen.storyboard in Resources */,
+				8EEF578F24657E43002A580A /* Assets.xcassets in Resources */,
+				8EEF578D24657E43002A580A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEF579624657E43002A580A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEF57A124657E43002A580A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EEF577E24657E43002A580A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEF578A24657E43002A580A /* ViewController.swift in Sources */,
+				8EEF578624657E43002A580A /* AppDelegate.swift in Sources */,
+				8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEF579424657E43002A580A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEF579D24657E43002A580A /* phoneticGuidesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEF579F24657E43002A580A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEF57A824657E43002A580A /* phoneticGuidesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EEF579A24657E43002A580A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EEF578124657E43002A580A /* phoneticGuidesApp */;
+			targetProxy = 8EEF579924657E43002A580A /* PBXContainerItemProxy */;
+		};
+		8EEF57A524657E43002A580A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EEF578124657E43002A580A /* phoneticGuidesApp */;
+			targetProxy = 8EEF57A424657E43002A580A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EEF578B24657E43002A580A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EEF578C24657E43002A580A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EEF579024657E43002A580A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EEF579124657E43002A580A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EEF57AA24657E43002A580A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EEF57AB24657E43002A580A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EEF57AD24657E43002A580A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXA6U83V29;
+				INFOPLIST_FILE = phoneticGuidesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EEF57AE24657E43002A580A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXA6U83V29;
+				INFOPLIST_FILE = phoneticGuidesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EEF57B024657E43002A580A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXA6U83V29;
+				INFOPLIST_FILE = phoneticGuidesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phoneticGuidesApp.app/phoneticGuidesApp";
+			};
+			name = Debug;
+		};
+		8EEF57B124657E43002A580A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXA6U83V29;
+				INFOPLIST_FILE = phoneticGuidesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phoneticGuidesApp.app/phoneticGuidesApp";
+			};
+			name = Release;
+		};
+		8EEF57B324657E43002A580A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXA6U83V29;
+				INFOPLIST_FILE = phoneticGuidesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phoneticGuidesApp;
+			};
+			name = Debug;
+		};
+		8EEF57B424657E43002A580A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXA6U83V29;
+				INFOPLIST_FILE = phoneticGuidesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phoneticGuidesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EEF577D24657E43002A580A /* Build configuration list for PBXProject "phoneticGuidesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEF57AA24657E43002A580A /* Debug */,
+				8EEF57AB24657E43002A580A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EEF57AC24657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEF57AD24657E43002A580A /* Debug */,
+				8EEF57AE24657E43002A580A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EEF57AF24657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEF57B024657E43002A580A /* Debug */,
+				8EEF57B124657E43002A580A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EEF57B224657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEF57B324657E43002A580A /* Debug */,
+				8EEF57B424657E43002A580A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EEF577A24657E43002A580A /* Project object */;
+}
