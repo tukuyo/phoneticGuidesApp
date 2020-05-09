@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import Alamofire
+
+struct ConvertText: Codable {
+    var request_id: String
+    var output_type: String
+    var converted: String
+}

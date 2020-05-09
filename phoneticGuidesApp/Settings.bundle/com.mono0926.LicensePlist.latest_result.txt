@@ -15,12 +15,16 @@ version: 2.15.1
 name: RxSwift, nameSpecified: 
 body: **The MIT License**
 …
-version: 4.5.0
+version: 5.1.1
 
 name: RxSwift, nameSpecified: 
 body: **The MIT License**
 …
-version: 4.5.0
+version: 5.1.1
+
+name: Then, nameSpecified: 
+body: The MIT License (MIT…
+version: 2.6.0
 
 add-version-numbers: false
 

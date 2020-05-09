@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		64877548D025CA90DBC4653C /* Pods_phoneticGuidesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */; };
 		8E4884FC2466A47600EADEA2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E4884FB2466A47600EADEA2 /* Settings.bundle */; };
+		8E4884FE2466A8C900EADEA2 /* gooAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4884FD2466A8C900EADEA2 /* gooAPIClient.swift */; };
+		8E4885002466DD9400EADEA2 /* API_KEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4884FF2466DD9400EADEA2 /* API_KEY.swift */; };
 		8EEF578624657E43002A580A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578524657E43002A580A /* AppDelegate.swift */; };
 		8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578724657E43002A580A /* SceneDelegate.swift */; };
 		8EEF578A24657E43002A580A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578924657E43002A580A /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppUITests/Pods-phoneticGuidesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		665046BBCDDBBA29602A51F0 /* Pods-phoneticGuidesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E4884FB2466A47600EADEA2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		8E4884FD2466A8C900EADEA2 /* gooAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gooAPIClient.swift; sourceTree = "<group>"; };
+		8E4884FF2466DD9400EADEA2 /* API_KEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_KEY.swift; sourceTree = "<group>"; };
 		8EEF578224657E43002A580A /* phoneticGuidesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneticGuidesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEF578524657E43002A580A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EEF578724657E43002A580A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				8EEF578524657E43002A580A /* AppDelegate.swift */,
 				8EEF578724657E43002A580A /* SceneDelegate.swift */,
 				8EEF578924657E43002A580A /* ViewController.swift */,
+				8E4884FD2466A8C900EADEA2 /* gooAPIClient.swift */,
+				8E4884FF2466DD9400EADEA2 /* API_KEY.swift */,
 				8EEF578E24657E43002A580A /* Assets.xcassets */,
 				8EEF579024657E43002A580A /* LaunchScreen.storyboard */,
 				8EEF579324657E43002A580A /* Info.plist */,
@@ -425,9 +431,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4885002466DD9400EADEA2 /* API_KEY.swift in Sources */,
 				8EEF578A24657E43002A580A /* ViewController.swift in Sources */,
 				8EEF578624657E43002A580A /* AppDelegate.swift in Sources */,
 				8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */,
+				8E4884FE2466A8C900EADEA2 /* gooAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

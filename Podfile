@@ -5,8 +5,9 @@ use_frameworks!
 
 target 'phoneticGuidesApp' do
 
-  pod 'RxSwift',    '~> 4.0'
+  pod 'RxSwift'
   pod 'Alamofire'
+  pod 'Then'
   pod 'LicensePlist'
 
 end
@@ -14,7 +15,7 @@ end
 
 target 'phoneticGuidesAppTests' do
 
-    pod 'RxSwift',    '~> 4.0'
+    pod 'RxSwift'
     pod 'Alamofire'
       
 end

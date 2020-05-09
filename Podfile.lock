@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.1.0)
   - LicensePlist (2.15.1)
-  - RxSwift (4.5.0)
+  - RxSwift (5.1.1)
+  - Then (2.6.0)
 
 DEPENDENCIES:
   - Alamofire
   - LicensePlist
-  - RxSwift (~> 4.0)
+  - RxSwift
+  - Then
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - LicensePlist
     - RxSwift
+    - Then
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   LicensePlist: 9fb7c521b431f94ea665046c15ed5f392583afbd
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: 8e786cf8c461b9e50cef909de698182e19225e9a
+PODFILE CHECKSUM: 7093260f36219afe3df624b3fe41c4c2f19a0387
 
 COCOAPODS: 1.9.1
