@@ -1,4 +1,4 @@
-# phoneticGuidesApp ~ふりがな(ルビ)ガイドアプリ~
+# phoneticGuidesApp ~ ふりがな(ルビ)ガイドアプリ ~
 
 漢字の文章を全て平仮名に変換し表示してくれるアプリ．  
 

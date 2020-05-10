@@ -6,8 +6,11 @@ use_frameworks!
 target 'phoneticGuidesApp' do
 
   pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'Alamofire'
   pod 'Then'
+  pod 'SnapKit', '~>5.0.0'
+  pod 'KMPlaceholderTextView', '~> 1.4.0'
   pod 'LicensePlist'
 
 end
@@ -15,8 +18,6 @@ end
 
 target 'phoneticGuidesAppTests' do
 
-    pod 'RxSwift'
-    pod 'Alamofire'
       
 end
 

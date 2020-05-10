@@ -9,15 +9,23 @@
 /* Begin PBXBuildFile section */
 		64877548D025CA90DBC4653C /* Pods_phoneticGuidesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */; };
 		8E4884FC2466A47600EADEA2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E4884FB2466A47600EADEA2 /* Settings.bundle */; };
-		8E4884FE2466A8C900EADEA2 /* gooAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4884FD2466A8C900EADEA2 /* gooAPIClient.swift */; };
 		8E4885002466DD9400EADEA2 /* API_KEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4884FF2466DD9400EADEA2 /* API_KEY.swift */; };
+		8EE563C92467D81400A5716F /* gooAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563C82467D81400A5716F /* gooAPIClient.swift */; };
+		8EE563CB2467D8B000A5716F /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563CA2467D8B000A5716F /* OutputViewController.swift */; };
+		8EE563CD2467D8CC00A5716F /* OutputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563CC2467D8CC00A5716F /* OutputViewModel.swift */; };
+		8EE563CF2467DAD700A5716F /* gooConvertAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563CE2467DAD700A5716F /* gooConvertAPIModel.swift */; };
+		8EE563D22467E6C500A5716F /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563D12467E6C500A5716F /* ErrorTracker.swift */; };
+		8EE563D82467E95D00A5716F /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563D72467E95D00A5716F /* ObservableType.swift */; };
+		8EE563DD24683BE700A5716F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563DC24683BE700A5716F /* ViewModelType.swift */; };
 		8EEF578624657E43002A580A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578524657E43002A580A /* AppDelegate.swift */; };
 		8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578724657E43002A580A /* SceneDelegate.swift */; };
-		8EEF578A24657E43002A580A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578924657E43002A580A /* ViewController.swift */; };
+		8EEF578A24657E43002A580A /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578924657E43002A580A /* InputViewController.swift */; };
 		8EEF578F24657E43002A580A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF578E24657E43002A580A /* Assets.xcassets */; };
 		8EEF579224657E43002A580A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF579024657E43002A580A /* LaunchScreen.storyboard */; };
 		8EEF579D24657E43002A580A /* phoneticGuidesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF579C24657E43002A580A /* phoneticGuidesAppTests.swift */; };
 		8EEF57A824657E43002A580A /* phoneticGuidesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF57A724657E43002A580A /* phoneticGuidesAppUITests.swift */; };
+		8EFE71682466F1F100F102E6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71672466F1F100F102E6 /* Result.swift */; };
+		8EFE716A2466F7C600F102E6 /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71692466F7C600F102E6 /* InputViewModel.swift */; };
 		921FFE8D5B0B061B1C49769D /* Pods_phoneticGuidesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE8EFE63CB9C4973EC0F376 /* Pods_phoneticGuidesAppTests.framework */; };
 		F12071F7986EAC77FE601C76 /* Pods_phoneticGuidesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4689D7DB04EF506842C20228 /* Pods_phoneticGuidesApp.framework */; };
 /* End PBXBuildFile section */
@@ -46,12 +54,18 @@
 		47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppUITests/Pods-phoneticGuidesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		665046BBCDDBBA29602A51F0 /* Pods-phoneticGuidesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E4884FB2466A47600EADEA2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		8E4884FD2466A8C900EADEA2 /* gooAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gooAPIClient.swift; sourceTree = "<group>"; };
 		8E4884FF2466DD9400EADEA2 /* API_KEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_KEY.swift; sourceTree = "<group>"; };
+		8EE563C82467D81400A5716F /* gooAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gooAPIClient.swift; sourceTree = "<group>"; };
+		8EE563CA2467D8B000A5716F /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		8EE563CC2467D8CC00A5716F /* OutputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewModel.swift; sourceTree = "<group>"; };
+		8EE563CE2467DAD700A5716F /* gooConvertAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gooConvertAPIModel.swift; sourceTree = "<group>"; };
+		8EE563D12467E6C500A5716F /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		8EE563D72467E95D00A5716F /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		8EE563DC24683BE700A5716F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		8EEF578224657E43002A580A /* phoneticGuidesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneticGuidesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEF578524657E43002A580A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EEF578724657E43002A580A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EEF578924657E43002A580A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EEF578924657E43002A580A /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		8EEF578E24657E43002A580A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EEF579124657E43002A580A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EEF579324657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +75,8 @@
 		8EEF57A324657E43002A580A /* phoneticGuidesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoneticGuidesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEF57A724657E43002A580A /* phoneticGuidesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneticGuidesAppUITests.swift; sourceTree = "<group>"; };
 		8EEF57A924657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EFE71672466F1F100F102E6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8EFE71692466F7C600F102E6 /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
 		BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8398C39B08CD7FE733F99B5 /* Pods-phoneticGuidesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppUITests/Pods-phoneticGuidesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D838FA1E6FAF5157B4C51FE6 /* Pods-phoneticGuidesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesApp.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +134,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8EE563D02467E6AF00A5716F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8EE563C82467D81400A5716F /* gooAPIClient.swift */,
+				8EE563D12467E6C500A5716F /* ErrorTracker.swift */,
+				8EE563D72467E95D00A5716F /* ObservableType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8EEF577924657E43002A580A = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +169,13 @@
 		8EEF578424657E43002A580A /* phoneticGuidesApp */ = {
 			isa = PBXGroup;
 			children = (
-				8EEF578524657E43002A580A /* AppDelegate.swift */,
-				8EEF578724657E43002A580A /* SceneDelegate.swift */,
-				8EEF578924657E43002A580A /* ViewController.swift */,
-				8E4884FD2466A8C900EADEA2 /* gooAPIClient.swift */,
+				8EE563D02467E6AF00A5716F /* Utilities */,
+				8EFE71652466F16400F102E6 /* Models */,
+				8EFE71662466F1D000F102E6 /* VIewModel */,
+				8EFE71642466F10D00F102E6 /* Views */,
 				8E4884FF2466DD9400EADEA2 /* API_KEY.swift */,
+				8EEF578724657E43002A580A /* SceneDelegate.swift */,
+				8EEF578524657E43002A580A /* AppDelegate.swift */,
 				8EEF578E24657E43002A580A /* Assets.xcassets */,
 				8EEF579024657E43002A580A /* LaunchScreen.storyboard */,
 				8EEF579324657E43002A580A /* Info.plist */,
@@ -172,6 +200,34 @@
 				8EEF57A924657E43002A580A /* Info.plist */,
 			);
 			path = phoneticGuidesAppUITests;
+			sourceTree = "<group>";
+		};
+		8EFE71642466F10D00F102E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF578924657E43002A580A /* InputViewController.swift */,
+				8EE563CA2467D8B000A5716F /* OutputViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8EFE71652466F16400F102E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE71672466F1F100F102E6 /* Result.swift */,
+				8EE563CE2467DAD700A5716F /* gooConvertAPIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8EFE71662466F1D000F102E6 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE71692466F7C600F102E6 /* InputViewModel.swift */,
+				8EE563CC2467D8CC00A5716F /* OutputViewModel.swift */,
+				8EE563DC24683BE700A5716F /* ViewModelType.swift */,
+			);
+			path = VIewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +261,6 @@
 				8EEF579424657E43002A580A /* Sources */,
 				8EEF579524657E43002A580A /* Frameworks */,
 				8EEF579624657E43002A580A /* Resources */,
-				BC65BFF7507B015F949EFEB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,23 +418,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC65BFF7507B015F949EFEB0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CB04E970F88BC2E87AB219FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,11 +469,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE563C92467D81400A5716F /* gooAPIClient.swift in Sources */,
 				8E4885002466DD9400EADEA2 /* API_KEY.swift in Sources */,
-				8EEF578A24657E43002A580A /* ViewController.swift in Sources */,
+				8EE563CD2467D8CC00A5716F /* OutputViewModel.swift in Sources */,
+				8EFE71682466F1F100F102E6 /* Result.swift in Sources */,
+				8EEF578A24657E43002A580A /* InputViewController.swift in Sources */,
+				8EE563D22467E6C500A5716F /* ErrorTracker.swift in Sources */,
+				8EE563DD24683BE700A5716F /* ViewModelType.swift in Sources */,
+				8EE563D82467E95D00A5716F /* ObservableType.swift in Sources */,
+				8EFE716A2466F7C600F102E6 /* InputViewModel.swift in Sources */,
+				8EE563CB2467D8B000A5716F /* OutputViewController.swift in Sources */,
 				8EEF578624657E43002A580A /* AppDelegate.swift in Sources */,
 				8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */,
-				8E4884FE2466A8C900EADEA2 /* gooAPIClient.swift in Sources */,
+				8EE563CF2467DAD700A5716F /* gooConvertAPIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
