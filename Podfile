@@ -17,7 +17,8 @@ end
 
 
 target 'phoneticGuidesAppTests' do
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
       
 end
 

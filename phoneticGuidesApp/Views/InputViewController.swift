@@ -103,7 +103,6 @@ class InputViewController: UIViewController {
         vc.outputViewModel = OutputViewModel(with: result)
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 
 extension InputViewController: UITextViewDelegate {
