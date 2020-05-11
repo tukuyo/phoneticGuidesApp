@@ -11,7 +11,9 @@ target 'phoneticGuidesApp' do
   pod 'Then'
   pod 'SnapKit', '~>5.0.0'
   pod 'KMPlaceholderTextView', '~> 1.4.0'
+  pod 'AwesomeSpotlightView'
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'SwiftyOverlay'
   pod 'LicensePlist'
 
 end

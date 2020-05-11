@@ -10,17 +10,19 @@ import UIKit
 import Then
 import SnapKit
 import KMPlaceholderTextView
+import AwesomeSpotlightView
 import RxSwift
 import RxCocoa
 
 class InputViewController: UIViewController {
-    
+
+    // textViewの上の文字
     let label = UILabel().then {
         $0.text = "テキストを変換"
         $0.font = UIFont.systemFont(ofSize: 20.0)
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
-    
+    // 変換するボタン
     let convertButton = UIButton(type: .system).then {
         $0.backgroundColor = UIColor(named: "buttonBody")
         $0.setTitle("変換", for: .normal)
@@ -29,7 +31,7 @@ class InputViewController: UIViewController {
         $0.layer.cornerRadius = 20
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
-    
+    // 説明を表示するためのボタン
     let descriptionButton = UIButton(type: .system).then {
         $0.backgroundColor = UIColor(named: "buttonBody")
         $0.setTitle("使用方法", for: .normal)
@@ -51,9 +53,13 @@ class InputViewController: UIViewController {
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
+    
     var inputViewModel: InputViewModel!
     let disposeBag = DisposeBag()
     
+    // 説明表示用
+    var spotlightView = AwesomeSpotlightView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,6 +68,12 @@ class InputViewController: UIViewController {
         bindViewModel()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setUpSpotLight()
+    }
+    
+    // ライト・ダークモード切り替え対応
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         guard let pt = previousTraitCollection else { return }
         if #available(iOS 13.0, *) {
@@ -71,7 +83,7 @@ class InputViewController: UIViewController {
         }
     }
     
-    
+    // UI初期化
     func initializeUI() {
         self.title = "ふりがなを生成"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
@@ -84,10 +96,12 @@ class InputViewController: UIViewController {
         setUpLayout()
     }
     
+    // ViewModel初期化
     func initializeViewModel() {
         inputViewModel = InputViewModel(with: gooConvertAPIModel())
     }
     
+    // Layout
     func setUpLayout() {
         label.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).inset(10)
@@ -115,6 +129,7 @@ class InputViewController: UIViewController {
         }
     }
     
+    // ボタンとテキストのバインド
     func bindViewModel() {
         let input = InputViewModel.Input(convertTrigger: convertButton.rx.tap.asDriver(),
                                          descriptionTrigger: descriptionButton.rx.tap.asDriver(),
@@ -126,22 +141,59 @@ class InputViewController: UIViewController {
         output.descriptionButton.drive(onNext: showDescription).disposed(by: disposeBag)
     }
     
-    // どうの方法でコードベースで遷移先に飛ばせば良いのか？
+    
+    // 次の画面へ遷移し、変換後のテキストを表示
+    // FIX: どうの方法でコードベースで遷移先に飛ばせば良いのか？
     func willShow(result: Result) {
         let vc = OutputViewController()
         vc.outputViewModel = OutputViewModel(with: result)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    // 説明を表示する
     func showDescription() {
-        print("AAA")
+        view.addSubview(spotlightView)
+        spotlightView.continueButtonModel.isEnable = true
+        spotlightView.skipButtonModel.isEnable = true
+        spotlightView.showAllSpotlightsAtOnce = false
+        spotlightView.start()
     }
 }
 
 extension InputViewController: UITextViewDelegate {
+    // キーボード閉じるための設定
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (self.inputTextView.isFirstResponder) {
             self.inputTextView.resignFirstResponder()
         }
+    }
+}
+
+// 説明の設定
+extension InputViewController: AwesomeSpotlightViewDelegate {
+    func spotlightView(_ spotlightView: AwesomeSpotlightView, willNavigateToIndex index: Int) {
+    }
+    
+    func spotlightView(_ spotlightView: AwesomeSpotlightView, didNavigateToIndex index: Int) {
+    }
+    
+    func spotlightViewWillCleanup(_ spotlightView: AwesomeSpotlightView, atIndex index: Int) {
+    }
+    
+    func spotlightViewDidCleanup(_ spotlightView: AwesomeSpotlightView){
+    }
+    
+    func setUpSpotLight() {
+        let inputTextViewSpotlightMargin = UIEdgeInsets(top: 30, left: 20, bottom: 20, right: 20)
+        let inputTextViewSpotlight = AwesomeSpotlight(withRect: inputTextView.frame, shape: .rectangle, text: "ここに変換したいテキストを入力．", margin: inputTextViewSpotlightMargin)
+        
+        let convertButtonSpotlight = AwesomeSpotlight(withRect: convertButton.frame, shape: .rectangle, text: "入力が終わったら、このボタンをタップ🌼")
+
+        let descriptionButtonSpotSpotlight = AwesomeSpotlight(withRect: descriptionButton.frame, shape: .roundRectangle, text: "この説明は、ここから何度でもみれます．")
+
+        
+        spotlightView = AwesomeSpotlightView(frame: view.frame, spotlight: [inputTextViewSpotlight, convertButtonSpotlight, descriptionButtonSpotSpotlight,])
+        spotlightView.cutoutRadius = 8
+        spotlightView.delegate = self
     }
 }

@@ -15,6 +15,7 @@ import RxCocoa
 
 class OutputViewController: UIViewController {
     
+    // 変換後のテキストを表示する．
     let outputTextView = UITextView().then {
         $0.backgroundColor = UIColor(named: "textView")
         $0.layer.cornerRadius = 10
@@ -27,6 +28,7 @@ class OutputViewController: UIViewController {
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
+    // クリップボードにコピーするボタン．
     let copyButton = UIButton(type: .system).then {
         $0.backgroundColor = UIColor(named: "buttonBody")
         $0.setTitle("Copy", for: .normal)
@@ -39,15 +41,16 @@ class OutputViewController: UIViewController {
     var outputViewModel: OutputViewModel!
     let disposeBag = DisposeBag()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initializeUI()
         initializeViewModel()
         bindViewModel()
-        
     }
     
+    // ライト・ダークモード切り替え対応
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         guard let pt = previousTraitCollection else { return }
         if #available(iOS 13.0, *) {
@@ -57,6 +60,7 @@ class OutputViewController: UIViewController {
         }
     }
     
+    // UI初期化
     func initializeUI() {
         view.backgroundColor = UIColor(named: "backgroundColor")
         view.addSubview(outputTextView)
@@ -64,11 +68,14 @@ class OutputViewController: UIViewController {
         setUpLayout()
     }
     
+    // ViewModelの初期化
+    // NOTE: 必ずこのビューに来る際には、outputViewModelが渡されるので必要がない気がするが...
     func initializeViewModel() {
         guard outputViewModel == nil else { return }
         outputViewModel = OutputViewModel()
     }
     
+    // Layout
     func setUpLayout() {
         outputTextView.snp.makeConstraints{
             $0.top.width.equalTo(view.safeAreaLayoutGuide).inset(20)
@@ -83,6 +90,7 @@ class OutputViewController: UIViewController {
         }
     }
     
+    // ボタンとテキストのバインド
     func bindViewModel() {
         let input = OutputViewModel.Input(dismissTrigger: copyButton.rx.tap.asDriver())
         let output = outputViewModel.transform(input: input)
@@ -91,7 +99,7 @@ class OutputViewController: UIViewController {
         
     }
     
-    
+    // トーストの表示
     func showCopyAlert() {
         self.view.makeToast("コピーしました!!")
     }
