@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import RxSwift
 @testable import phoneticGuidesApp
 
 class phoneticGuidesAppTests: XCTestCase {
@@ -20,8 +21,7 @@ class phoneticGuidesAppTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
     }
 
     func testPerformanceExample() throws {
@@ -30,5 +30,18 @@ class phoneticGuidesAppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    
+    func testAPIClient() throws {
+//        let client = gooConvertAPIModel()
+//        let text = ["鮑","栗","雷","粉骨砕身","昇竜拳","ABCD"]
+//        let Answer = ["あわび","くり","かみなり","ふんこつさいしん","しょうりゅうけん","えーびーしーでぃー"]
+//        
+//        for (i,v) in text.enumerated() {
+//            let result = client.convertText(v)
+//            print("#1->",  result)
+//            // テストを書く勉強をする
+//        }
+    }
 }
+

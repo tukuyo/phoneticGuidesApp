@@ -3,18 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64877548D025CA90DBC4653C /* Pods_phoneticGuidesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */; };
+		8E4884FC2466A47600EADEA2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E4884FB2466A47600EADEA2 /* Settings.bundle */; };
+		8E4885002466DD9400EADEA2 /* API_KEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4884FF2466DD9400EADEA2 /* API_KEY.swift */; };
+		8EE563C92467D81400A5716F /* gooAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563C82467D81400A5716F /* gooAPIClient.swift */; };
+		8EE563CB2467D8B000A5716F /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563CA2467D8B000A5716F /* OutputViewController.swift */; };
+		8EE563CD2467D8CC00A5716F /* OutputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563CC2467D8CC00A5716F /* OutputViewModel.swift */; };
+		8EE563CF2467DAD700A5716F /* gooConvertAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563CE2467DAD700A5716F /* gooConvertAPIModel.swift */; };
+		8EE563D22467E6C500A5716F /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563D12467E6C500A5716F /* ErrorTracker.swift */; };
+		8EE563D82467E95D00A5716F /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563D72467E95D00A5716F /* ObservableType.swift */; };
+		8EE563DD24683BE700A5716F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563DC24683BE700A5716F /* ViewModelType.swift */; };
 		8EEF578624657E43002A580A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578524657E43002A580A /* AppDelegate.swift */; };
 		8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578724657E43002A580A /* SceneDelegate.swift */; };
-		8EEF578A24657E43002A580A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578924657E43002A580A /* ViewController.swift */; };
-		8EEF578D24657E43002A580A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF578B24657E43002A580A /* Main.storyboard */; };
+		8EEF578A24657E43002A580A /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF578924657E43002A580A /* InputViewController.swift */; };
 		8EEF578F24657E43002A580A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF578E24657E43002A580A /* Assets.xcassets */; };
 		8EEF579224657E43002A580A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF579024657E43002A580A /* LaunchScreen.storyboard */; };
 		8EEF579D24657E43002A580A /* phoneticGuidesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF579C24657E43002A580A /* phoneticGuidesAppTests.swift */; };
 		8EEF57A824657E43002A580A /* phoneticGuidesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF57A724657E43002A580A /* phoneticGuidesAppUITests.swift */; };
+		8EFE71682466F1F100F102E6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71672466F1F100F102E6 /* Result.swift */; };
+		8EFE716A2466F7C600F102E6 /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71692466F7C600F102E6 /* InputViewModel.swift */; };
+		921FFE8D5B0B061B1C49769D /* Pods_phoneticGuidesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE8EFE63CB9C4973EC0F376 /* Pods_phoneticGuidesAppTests.framework */; };
+		F12071F7986EAC77FE601C76 /* Pods_phoneticGuidesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4689D7DB04EF506842C20228 /* Pods_phoneticGuidesApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8EEF578224657E43002A580A /* phoneticGuidesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneticGuidesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0674BB72EDF5D09E40F7B955 /* Pods-phoneticGuidesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesApp.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		176876B769DD48577A47EB33 /* Pods-phoneticGuidesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppTests.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4689D7DB04EF506842C20228 /* Pods_phoneticGuidesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppUITests/Pods-phoneticGuidesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		665046BBCDDBBA29602A51F0 /* Pods-phoneticGuidesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E4884FB2466A47600EADEA2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		8E4884FF2466DD9400EADEA2 /* API_KEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_KEY.swift; sourceTree = "<group>"; };
+		8EE563C82467D81400A5716F /* gooAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gooAPIClient.swift; sourceTree = "<group>"; };
+		8EE563CA2467D8B000A5716F /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		8EE563CC2467D8CC00A5716F /* OutputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewModel.swift; sourceTree = "<group>"; };
+		8EE563CE2467DAD700A5716F /* gooConvertAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gooConvertAPIModel.swift; sourceTree = "<group>"; };
+		8EE563D12467E6C500A5716F /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		8EE563D72467E95D00A5716F /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		8EE563DC24683BE700A5716F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		8EEF578224657E43002A580A /* ふりがなガイド.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ふりがなガイド.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEF578524657E43002A580A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EEF578724657E43002A580A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EEF578924657E43002A580A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8EEF578C24657E43002A580A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EEF578924657E43002A580A /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		8EEF578E24657E43002A580A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EEF579124657E43002A580A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EEF579324657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +75,12 @@
 		8EEF57A324657E43002A580A /* phoneticGuidesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phoneticGuidesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEF57A724657E43002A580A /* phoneticGuidesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneticGuidesAppUITests.swift; sourceTree = "<group>"; };
 		8EEF57A924657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EFE71672466F1F100F102E6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8EFE71692466F7C600F102E6 /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
+		BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8398C39B08CD7FE733F99B5 /* Pods-phoneticGuidesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppUITests/Pods-phoneticGuidesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D838FA1E6FAF5157B4C51FE6 /* Pods-phoneticGuidesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesApp.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp.release.xcconfig"; sourceTree = "<group>"; };
+		DFE8EFE63CB9C4973EC0F376 /* Pods_phoneticGuidesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12071F7986EAC77FE601C76 /* Pods_phoneticGuidesApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921FFE8D5B0B061B1C49769D /* Pods_phoneticGuidesAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +104,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64877548D025CA90DBC4653C /* Pods_phoneticGuidesAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F8354EC738AA74E38EB1525 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0674BB72EDF5D09E40F7B955 /* Pods-phoneticGuidesApp.debug.xcconfig */,
+				D838FA1E6FAF5157B4C51FE6 /* Pods-phoneticGuidesApp.release.xcconfig */,
+				665046BBCDDBBA29602A51F0 /* Pods-phoneticGuidesAppTests.debug.xcconfig */,
+				176876B769DD48577A47EB33 /* Pods-phoneticGuidesAppTests.release.xcconfig */,
+				47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */,
+				C8398C39B08CD7FE733F99B5 /* Pods-phoneticGuidesAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D2395CA710012E21877C625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4689D7DB04EF506842C20228 /* Pods_phoneticGuidesApp.framework */,
+				DFE8EFE63CB9C4973EC0F376 /* Pods_phoneticGuidesAppTests.framework */,
+				BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EE563D02467E6AF00A5716F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8EE563C82467D81400A5716F /* gooAPIClient.swift */,
+				8EE563D12467E6C500A5716F /* ErrorTracker.swift */,
+				8EE563D72467E95D00A5716F /* ObservableType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8EEF577924657E43002A580A = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +151,15 @@
 				8EEF579B24657E43002A580A /* phoneticGuidesAppTests */,
 				8EEF57A624657E43002A580A /* phoneticGuidesAppUITests */,
 				8EEF578324657E43002A580A /* Products */,
+				7F8354EC738AA74E38EB1525 /* Pods */,
+				8D2395CA710012E21877C625 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8EEF578324657E43002A580A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EEF578224657E43002A580A /* phoneticGuidesApp.app */,
+				8EEF578224657E43002A580A /* ふりがなガイド.app */,
 				8EEF579824657E43002A580A /* phoneticGuidesAppTests.xctest */,
 				8EEF57A324657E43002A580A /* phoneticGuidesAppUITests.xctest */,
 			);
@@ -99,13 +169,17 @@
 		8EEF578424657E43002A580A /* phoneticGuidesApp */ = {
 			isa = PBXGroup;
 			children = (
-				8EEF578524657E43002A580A /* AppDelegate.swift */,
+				8EE563D02467E6AF00A5716F /* Utilities */,
+				8EFE71652466F16400F102E6 /* Models */,
+				8EFE71662466F1D000F102E6 /* VIewModel */,
+				8EFE71642466F10D00F102E6 /* Views */,
+				8E4884FF2466DD9400EADEA2 /* API_KEY.swift */,
 				8EEF578724657E43002A580A /* SceneDelegate.swift */,
-				8EEF578924657E43002A580A /* ViewController.swift */,
-				8EEF578B24657E43002A580A /* Main.storyboard */,
+				8EEF578524657E43002A580A /* AppDelegate.swift */,
 				8EEF578E24657E43002A580A /* Assets.xcassets */,
 				8EEF579024657E43002A580A /* LaunchScreen.storyboard */,
 				8EEF579324657E43002A580A /* Info.plist */,
+				8E4884FB2466A47600EADEA2 /* Settings.bundle */,
 			);
 			path = phoneticGuidesApp;
 			sourceTree = "<group>";
@@ -128,6 +202,34 @@
 			path = phoneticGuidesAppUITests;
 			sourceTree = "<group>";
 		};
+		8EFE71642466F10D00F102E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF578924657E43002A580A /* InputViewController.swift */,
+				8EE563CA2467D8B000A5716F /* OutputViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8EFE71652466F16400F102E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE71672466F1F100F102E6 /* Result.swift */,
+				8EE563CE2467DAD700A5716F /* gooConvertAPIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8EFE71662466F1D000F102E6 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE71692466F7C600F102E6 /* InputViewModel.swift */,
+				8EE563CC2467D8CC00A5716F /* OutputViewModel.swift */,
+				8EE563DC24683BE700A5716F /* ViewModelType.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EEF57AC24657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesApp" */;
 			buildPhases = (
+				CB04E970F88BC2E87AB219FA /* [CP] Check Pods Manifest.lock */,
 				8EEF577E24657E43002A580A /* Sources */,
 				8EEF577F24657E43002A580A /* Frameworks */,
 				8EEF578024657E43002A580A /* Resources */,
+				2F486D8C357C3B6A2762CCD0 /* [CP] Embed Pods Frameworks */,
+				8E4884F72466A32E00EADEA2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,16 +250,18 @@
 			);
 			name = phoneticGuidesApp;
 			productName = phoneticGuidesApp;
-			productReference = 8EEF578224657E43002A580A /* phoneticGuidesApp.app */;
+			productReference = 8EEF578224657E43002A580A /* ふりがなガイド.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8EEF579724657E43002A580A /* phoneticGuidesAppTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EEF57AF24657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesAppTests" */;
 			buildPhases = (
+				9A69825591D8C4EFF4920BA1 /* [CP] Check Pods Manifest.lock */,
 				8EEF579424657E43002A580A /* Sources */,
 				8EEF579524657E43002A580A /* Frameworks */,
 				8EEF579624657E43002A580A /* Resources */,
+				54B0510C80D29A861A3A7A81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EEF57B224657E43002A580A /* Build configuration list for PBXNativeTarget "phoneticGuidesAppUITests" */;
 			buildPhases = (
+				E87217C986F581AB85E525EB /* [CP] Check Pods Manifest.lock */,
 				8EEF579F24657E43002A580A /* Sources */,
 				8EEF57A024657E43002A580A /* Frameworks */,
 				8EEF57A124657E43002A580A /* Resources */,
@@ -233,8 +341,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EEF579224657E43002A580A /* LaunchScreen.storyboard in Resources */,
+				8E4884FC2466A47600EADEA2 /* Settings.bundle in Resources */,
 				8EEF578F24657E43002A580A /* Assets.xcassets in Resources */,
-				8EEF578D24657E43002A580A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +362,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F486D8C357C3B6A2762CCD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54B0510C80D29A861A3A7A81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4884F72466A32E00EADEA2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho $SRCROOT\nif [ $CONFIGURATION = \"Debug\" ]; then\n${PODS_ROOT}/LicensePlist/license-plist --output-path $PRODUCT_NAME/Settings.bundle\nfi\n";
+		};
+		9A69825591D8C4EFF4920BA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-phoneticGuidesAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB04E970F88BC2E87AB219FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-phoneticGuidesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87217C986F581AB85E525EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-phoneticGuidesAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8EEF577E24657E43002A580A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EEF578A24657E43002A580A /* ViewController.swift in Sources */,
+				8EE563C92467D81400A5716F /* gooAPIClient.swift in Sources */,
+				8E4885002466DD9400EADEA2 /* API_KEY.swift in Sources */,
+				8EE563CD2467D8CC00A5716F /* OutputViewModel.swift in Sources */,
+				8EFE71682466F1F100F102E6 /* Result.swift in Sources */,
+				8EEF578A24657E43002A580A /* InputViewController.swift in Sources */,
+				8EE563D22467E6C500A5716F /* ErrorTracker.swift in Sources */,
+				8EE563DD24683BE700A5716F /* ViewModelType.swift in Sources */,
+				8EE563D82467E95D00A5716F /* ObservableType.swift in Sources */,
+				8EFE716A2466F7C600F102E6 /* InputViewModel.swift in Sources */,
+				8EE563CB2467D8B000A5716F /* OutputViewController.swift in Sources */,
 				8EEF578624657E43002A580A /* AppDelegate.swift in Sources */,
 				8EEF578824657E43002A580A /* SceneDelegate.swift in Sources */,
+				8EE563CF2467DAD700A5716F /* gooConvertAPIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +535,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8EEF578B24657E43002A580A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EEF578C24657E43002A580A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8EEF579024657E43002A580A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +650,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,18 +662,19 @@
 		};
 		8EEF57AD24657E43002A580A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0674BB72EDF5D09E40F7B955 /* Pods-phoneticGuidesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXA6U83V29;
 				INFOPLIST_FILE = phoneticGuidesApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ふりがなガイド";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,18 +682,19 @@
 		};
 		8EEF57AE24657E43002A580A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D838FA1E6FAF5157B4C51FE6 /* Pods-phoneticGuidesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXA6U83V29;
 				INFOPLIST_FILE = phoneticGuidesApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ふりがなガイド";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,8 +702,9 @@
 		};
 		8EEF57B024657E43002A580A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665046BBCDDBBA29602A51F0 /* Pods-phoneticGuidesAppTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXA6U83V29;
@@ -492,8 +725,9 @@
 		};
 		8EEF57B124657E43002A580A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176876B769DD48577A47EB33 /* Pods-phoneticGuidesAppTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXA6U83V29;
@@ -514,6 +748,7 @@
 		};
 		8EEF57B324657E43002A580A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +769,7 @@
 		};
 		8EEF57B424657E43002A580A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8398C39B08CD7FE733F99B5 /* Pods-phoneticGuidesAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

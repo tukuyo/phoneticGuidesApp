@@ -1,0 +1,69 @@
+name: Alamofire, nameSpecified: 
+body: Copyright (c) 2014-2…
+version: 5.1.0
+
+name: AwesomeSpotlightView, nameSpecified: 
+body: Copyright (c) 2017 a…
+version: 0.1.10
+
+name: KMPlaceholderTextView, nameSpecified: 
+body: The MIT License (MIT…
+version: 1.4.0
+
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 2.15.1
+
+name: RxCocoa, nameSpecified: 
+body: **The MIT License**
+…
+version: 5.1.1
+
+name: RxCocoa, nameSpecified: 
+body: **The MIT License**
+…
+version: 5.1.1
+
+name: RxRelay, nameSpecified: 
+body: **The MIT License**
+…
+version: 5.1.1
+
+name: RxRelay, nameSpecified: 
+body: **The MIT License**
+…
+version: 5.1.1
+
+name: RxSwift, nameSpecified: 
+body: **The MIT License**
+…
+version: 5.1.1
+
+name: RxSwift, nameSpecified: 
+body: **The MIT License**
+…
+version: 5.1.1
+
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.0.1
+
+name: SwiftyOverlay, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 1.1.6
+
+name: Then, nameSpecified: 
+body: The MIT License (MIT…
+version: 2.6.0
+
+name: Toast-Swift, nameSpecified: 
+body: Copyright (c) 2015-2…
+version: 5.0.1
+
+add-version-numbers: false
+
+LicensePlist Version: 2.15.0
