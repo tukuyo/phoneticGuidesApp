@@ -73,18 +73,18 @@ class InputViewController: UIViewController {
     }
     
     func setUpLayout() {
+        inputTextView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(30)
+            $0.height.equalTo(view.safeAreaLayoutGuide).multipliedBy(0.4)
+            $0.width.equalTo(view.safeAreaLayoutGuide).inset(30)
+            $0.centerX.equalTo(view)
+        }
+        
         convertButton.snp.makeConstraints {
             $0.width.equalTo(view.safeAreaLayoutGuide).inset(20)
             $0.height.equalTo(50)
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(10)
+            $0.top.equalTo(inputTextView.snp.bottom).inset(-10)
             $0.centerX.equalTo(view)
-        }
-        inputTextView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(10)
-            $0.bottom.equalTo(convertButton.snp.top).inset(-20)
-            $0.width.equalTo(view.safeAreaLayoutGuide).inset(20)
-            $0.centerX.equalTo(view)
-
         }
     }
     

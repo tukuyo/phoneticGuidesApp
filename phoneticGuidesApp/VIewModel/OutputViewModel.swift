@@ -17,7 +17,9 @@ class OutputViewModel: ViewModelType {
     }
     
     struct Output {
+        let copy: Driver<Void>
         let convertedText: Driver<Result?>
+        let error: Driver<Error>
     }
     
     struct State {
@@ -31,7 +33,13 @@ class OutputViewModel: ViewModelType {
     }
     
     func transform(input: OutputViewModel.Input) -> OutputViewModel.Output {
-        return OutputViewModel.Output(convertedText: Driver.just(convertedText))
+        let state = State()
+        let copy = input.dismissTrigger.do(onNext: { [unowned self] in
+            UIPasteboard.general.string = self.convertedText?.converted
+        })
+        return OutputViewModel.Output(copy: copy,
+                                      convertedText: Driver.just(convertedText),
+                                      error: state.error.asDriver())
     }
     
 }
