@@ -26,6 +26,7 @@ class gooConvertAPIModel {
             let request = self.client.postRequest(self.parameters).responseJSON{ response in
                 if let error = response.error {
                     observer.onError(error)
+                    print(error)
                 }
                 let result = self.parseJSON(response.data ?? [])
                 

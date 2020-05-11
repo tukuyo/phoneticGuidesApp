@@ -62,7 +62,7 @@
 		8EE563D12467E6C500A5716F /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		8EE563D72467E95D00A5716F /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
 		8EE563DC24683BE700A5716F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
-		8EEF578224657E43002A580A /* phoneticGuidesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneticGuidesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEF578224657E43002A580A /* ふりがなガイド.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ふりがなガイド.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEF578524657E43002A580A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EEF578724657E43002A580A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8EEF578924657E43002A580A /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		8EEF578324657E43002A580A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EEF578224657E43002A580A /* phoneticGuidesApp.app */,
+				8EEF578224657E43002A580A /* ふりがなガイド.app */,
 				8EEF579824657E43002A580A /* phoneticGuidesAppTests.xctest */,
 				8EEF57A324657E43002A580A /* phoneticGuidesAppUITests.xctest */,
 			);
@@ -250,7 +250,7 @@
 			);
 			name = phoneticGuidesApp;
 			productName = phoneticGuidesApp;
-			productReference = 8EEF578224657E43002A580A /* phoneticGuidesApp.app */;
+			productReference = 8EEF578224657E43002A580A /* ふりがなガイド.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8EEF579724657E43002A580A /* phoneticGuidesAppTests */ = {
@@ -261,6 +261,7 @@
 				8EEF579424657E43002A580A /* Sources */,
 				8EEF579524657E43002A580A /* Frameworks */,
 				8EEF579624657E43002A580A /* Resources */,
+				54B0510C80D29A861A3A7A81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,6 +378,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54B0510C80D29A861A3A7A81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8E4884F72466A32E00EADEA2 /* ShellScript */ = {
@@ -656,7 +674,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ふりがなガイド";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -676,7 +694,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.tukuyo.phoneticGuidesApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ふりがなガイド";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
