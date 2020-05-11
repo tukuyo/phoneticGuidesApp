@@ -15,11 +15,13 @@ class InputViewModel: ViewModelType {
     //　ビューにあるボタンとテキストビュー
     struct Input {
         let convertTrigger: Driver<Void>
+        let descriptionTrigger: Driver<Void>
         let text: Driver<String>
     }
     
     //
     struct Output {
+        let descriptionButton: Driver<Void>
         let convertedText: Driver<Result>
         let error: Driver<Error>
     }
@@ -38,6 +40,7 @@ class InputViewModel: ViewModelType {
     
     func transform(input: InputViewModel.Input) -> InputViewModel.Output {
         let state = State()
+        let description = input.descriptionTrigger.do()
         let converted = input.convertTrigger
             .withLatestFrom(input.text)
             .flatMapLatest { [unowned self] content in
@@ -45,7 +48,9 @@ class InputViewModel: ViewModelType {
                     .trackError(state.error)
                     .asDriverOnErrorJustComplete()
             }
-        return InputViewModel.Output(convertedText: converted, error: state.error.asDriver())
+        return InputViewModel.Output(descriptionButton: description,
+                                     convertedText: converted,
+                                     error: state.error.asDriver())
     }
     
 }

@@ -10,6 +10,7 @@ PODS:
   - RxSwift (5.1.1)
   - SnapKit (5.0.1)
   - Then (2.6.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - RxSwift
   - SnapKit (~> 5.0.0)
   - Then
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -30,6 +32,7 @@ SPEC REPOS:
     - RxSwift
     - SnapKit
     - Then
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
@@ -40,7 +43,8 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: f737afad7720fa4e6c60d48043ef1759faf37b75
+PODFILE CHECKSUM: 6b2a681362ab1b2974a8c0ded40705f7fccaa0f1
 
 COCOAPODS: 1.9.1

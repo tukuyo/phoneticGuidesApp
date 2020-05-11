@@ -9,6 +9,7 @@
 import UIKit
 import Then
 import SnapKit
+import Toast_Swift
 import RxSwift
 import RxCocoa
 
@@ -21,6 +22,7 @@ class OutputViewController: UIViewController {
         $0.layer.borderWidth = 3
         $0.text = "変換に失敗した"
         $0.font = UIFont.systemFont(ofSize: 20)
+        $0.isEditable = false
         $0.sizeToFit()
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -86,10 +88,11 @@ class OutputViewController: UIViewController {
         let output = outputViewModel.transform(input: input)
         output.convertedText.map { $0?.converted }.drive(outputTextView.rx.text).disposed(by: disposeBag)
         output.copy.drive(onNext:showCopyAlert).disposed(by: disposeBag)
+        
     }
     
     
     func showCopyAlert() {
-        
+        self.view.makeToast("コピーしました!!")
     }
 }
