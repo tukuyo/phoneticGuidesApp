@@ -42,10 +42,14 @@ let API_KEY = "*******"
 
 
 
-## Refanrences
+## References
 **※1** OSをMVC,MVP,MVVM,Clean Architectureで実装してみた
  - https://medium.com/@rockname/clean-archirecture-7be37f34c943
  - https://github.com/rockname/ArchitectureSampleWithFirebase
  
 **※2** goo ラボ　ひらがな化API
  - https://labs.goo.ne.jp/api/jp/hiragana-translation/
+
+## Author
+ - [HP](https://tukuyo.net/)
+ - [Twitte](https://twitter.com/tukutuku_tukuyo)
