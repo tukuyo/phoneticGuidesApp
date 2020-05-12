@@ -62,7 +62,7 @@ class OutputViewController: UIViewController {
     
     // UI初期化
     func initializeUI() {
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = UIColor(named: "BackgroundColor")
         view.addSubview(outputTextView)
         view.addSubview(copyButton)
         setUpLayout()

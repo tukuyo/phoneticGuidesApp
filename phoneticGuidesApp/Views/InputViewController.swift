@@ -88,7 +88,7 @@ class InputViewController: UIViewController {
         self.title = "ふりがなを生成"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
         inputTextView.delegate = self
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = UIColor(named: "BackgroundColor")
         view.addSubview(label)
         view.addSubview(convertButton)
         view.addSubview(inputTextView)
