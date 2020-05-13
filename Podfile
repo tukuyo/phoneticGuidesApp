@@ -13,6 +13,7 @@ target 'phoneticGuidesApp' do
   pod 'KMPlaceholderTextView', '~> 1.4.0'
   pod 'AwesomeSpotlightView'
   pod 'Toast-Swift', '~> 5.0.1'
+  pod "CDAlertView"
   pod 'SwiftyOverlay'
   pod 'LicensePlist'
 

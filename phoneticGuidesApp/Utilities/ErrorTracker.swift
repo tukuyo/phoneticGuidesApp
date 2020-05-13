@@ -10,6 +10,14 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+enum Exception: Error {
+    case network
+    case auth
+    case key
+    case generic(message: String)
+    case unknown
+}
+
 final class ErrorTracker: SharedSequenceConvertibleType {
     typealias SharingStrategy = DriverSharingStrategy
     private let _subject = PublishSubject<Error>()

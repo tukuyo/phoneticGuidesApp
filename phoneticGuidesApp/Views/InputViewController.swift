@@ -11,6 +11,7 @@ import Then
 import SnapKit
 import KMPlaceholderTextView
 import AwesomeSpotlightView
+import CDAlertView
 import RxSwift
 import RxCocoa
 
@@ -139,6 +140,7 @@ class InputViewController: UIViewController {
         let output = inputViewModel.transform(input: input)
         output.convertedText.drive(onNext: willShow).disposed(by: disposeBag)
         output.descriptionButton.drive(onNext: showDescription).disposed(by: disposeBag)
+        output.error.drive(onNext: showError).disposed(by: disposeBag)
     }
     
     
@@ -158,7 +160,25 @@ class InputViewController: UIViewController {
         spotlightView.showAllSpotlightsAtOnce = false
         spotlightView.start()
     }
+    
+    // エラーを表示できるようにした．
+    func showError(error: Error) {
+        switch error {
+        case Exception.generic(let message):
+            let alert = CDAlertView(title: "エラー", message: message , type: .error)
+            let doneAction = CDAlertViewAction(title: "OK")
+            alert.add(action: doneAction)
+            alert.show()
+        default:
+            let alert = CDAlertView(title: "エラー", message: "判別不能" , type: .error)
+            let doneAction = CDAlertViewAction(title: "OK")
+            alert.add(action: doneAction)
+            alert.show()
+        }
+        
+    }
 }
+
 
 extension InputViewController: UITextViewDelegate {
     // キーボード閉じるための設定
@@ -168,6 +188,7 @@ extension InputViewController: UITextViewDelegate {
         }
     }
 }
+
 
 // 説明の設定
 extension InputViewController: AwesomeSpotlightViewDelegate {
