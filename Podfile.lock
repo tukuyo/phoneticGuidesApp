@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.1.0)
   - AwesomeSpotlightView (0.1.10)
+  - CDAlertView (0.10.0)
   - KMPlaceholderTextView (1.4.0)
   - LicensePlist (2.15.1)
   - RxCocoa (5.1.1):
@@ -17,6 +18,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AwesomeSpotlightView
+  - CDAlertView
   - KMPlaceholderTextView (~> 1.4.0)
   - LicensePlist
   - RxCocoa
@@ -30,6 +32,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AwesomeSpotlightView
+    - CDAlertView
     - KMPlaceholderTextView
     - LicensePlist
     - RxCocoa
@@ -43,6 +46,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   AwesomeSpotlightView: 7dc307f796ecc86ce0cfec36c9b9b14336e6ea83
+  CDAlertView: ee6a87c90c4283c8d316d55633db1a6981f1cc51
   KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
   LicensePlist: 9fb7c521b431f94ea665046c15ed5f392583afbd
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -53,6 +57,6 @@ SPEC CHECKSUMS:
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: a87e11e4af8296f860bc22f4a694357064372308
+PODFILE CHECKSUM: 1d4cf5a495e7fd1578746f35f456f553d812d579
 
 COCOAPODS: 1.9.1

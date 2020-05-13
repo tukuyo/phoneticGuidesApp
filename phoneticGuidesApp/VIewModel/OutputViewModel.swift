@@ -35,9 +35,7 @@ class OutputViewModel: ViewModelType {
     func transform(input: OutputViewModel.Input) -> OutputViewModel.Output {
         let state = State()
         let copy = input.dismissTrigger.do(onNext: { [unowned self] in
-            if self.convertedText?.converted == "変換できませんでした．" {
-                return  // ここでエラーを返したい．
-            }
+            // クリップボードにコピー
             UIPasteboard.general.string = self.convertedText?.converted
         })
         return OutputViewModel.Output(copy: copy,

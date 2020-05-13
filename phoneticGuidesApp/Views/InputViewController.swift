@@ -11,6 +11,7 @@ import Then
 import SnapKit
 import KMPlaceholderTextView
 import AwesomeSpotlightView
+import CDAlertView
 import RxSwift
 import RxCocoa
 
@@ -85,14 +86,19 @@ class InputViewController: UIViewController {
     
     // UI初期化
     func initializeUI() {
-        self.title = "ふりがなを生成"
+        self.title = "ふりがなガイド"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
+        
         inputTextView.delegate = self
+        inputTextView.returnKeyType = UIReturnKeyType.done
+        
         view.backgroundColor = UIColor(named: "BackgroundColor")
+        
         view.addSubview(label)
         view.addSubview(convertButton)
         view.addSubview(inputTextView)
         view.addSubview(descriptionButton)
+        
         setUpLayout()
     }
     
@@ -139,6 +145,7 @@ class InputViewController: UIViewController {
         let output = inputViewModel.transform(input: input)
         output.convertedText.drive(onNext: willShow).disposed(by: disposeBag)
         output.descriptionButton.drive(onNext: showDescription).disposed(by: disposeBag)
+        output.error.drive(onNext: showError).disposed(by: disposeBag)
     }
     
     
@@ -158,7 +165,25 @@ class InputViewController: UIViewController {
         spotlightView.showAllSpotlightsAtOnce = false
         spotlightView.start()
     }
+    
+    // エラーを表示できるようにした．
+    func showError(error: Error) {
+        switch error {
+        case Exception.generic(let message):
+            let alert = CDAlertView(title: "エラー", message: message , type: .error)
+            let doneAction = CDAlertViewAction(title: "OK")
+            alert.add(action: doneAction)
+            alert.show()
+        default:
+            let alert = CDAlertView(title: "エラー", message: "判別不能" , type: .error)
+            let doneAction = CDAlertViewAction(title: "OK")
+            alert.add(action: doneAction)
+            alert.show()
+        }
+        
+    }
 }
+
 
 extension InputViewController: UITextViewDelegate {
     // キーボード閉じるための設定
@@ -167,7 +192,17 @@ extension InputViewController: UITextViewDelegate {
             self.inputTextView.resignFirstResponder()
         }
     }
+    
+    // 改行で閉じる
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return true
+        }
+        return true
+    }
 }
+
 
 // 説明の設定
 extension InputViewController: AwesomeSpotlightViewDelegate {

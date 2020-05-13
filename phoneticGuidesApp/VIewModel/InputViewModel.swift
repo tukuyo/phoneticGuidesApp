@@ -12,21 +12,18 @@ import RxCocoa
 
 class InputViewModel: ViewModelType {
     
-    //　ビューにあるボタンとテキストビュー
     struct Input {
         let convertTrigger: Driver<Void>
         let descriptionTrigger: Driver<Void>
         let text: Driver<String>
     }
     
-    //
     struct Output {
         let descriptionButton: Driver<Void>
         let convertedText: Driver<Result>
         let error: Driver<Error>
     }
     
-    //
     struct State {
         let error = ErrorTracker()
     }
@@ -36,7 +33,6 @@ class InputViewModel: ViewModelType {
     init(with APIModel: gooConvertAPIModel) {
         self.apiModel = APIModel
     }
-    
     
     func transform(input: InputViewModel.Input) -> InputViewModel.Output {
         let state = State()

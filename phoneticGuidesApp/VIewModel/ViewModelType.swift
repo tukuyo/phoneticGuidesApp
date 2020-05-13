@@ -9,9 +9,9 @@
 import Foundation
 
 protocol ViewModelType {
-    associatedtype Input
-    associatedtype Output
-    associatedtype State
+    associatedtype Input    // Viewからのインプット
+    associatedtype Output   // ViewModelからのアウトプット
+    associatedtype State    // 状態管理
     
     func transform(input: Input) -> Output
 }
