@@ -86,7 +86,7 @@ class InputViewController: UIViewController {
     
     // UI初期化
     func initializeUI() {
-        self.title = "ふりがなを生成"
+        self.title = "ふりがなガイド"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
         inputTextView.delegate = self
         view.backgroundColor = UIColor(named: "BackgroundColor")

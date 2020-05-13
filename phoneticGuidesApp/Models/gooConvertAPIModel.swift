@@ -13,6 +13,7 @@ import Alamofire
 
 class gooConvertAPIModel {
     
+    // API Client
     let client = gooAPIClient()
     // 必要なパラメータ
     var parameters = [
@@ -20,13 +21,14 @@ class gooConvertAPIModel {
         "request_id": "0"
     ]
     
+    // テキストを変換する
     func convertText(_ text: String, type: String = "hiragana") -> Observable<Result> {
         setParameter(text: text, type: type, date: Date())
         return Observable<Result>.create { [weak self] (observer) -> Disposable in
             let request = self?.client.postRequest(self!.parameters).responseJSON{ response in
                 
                 switch response.result {
-                    // 成功時、APIでのエラーもこちらに来る．少し気持ち悪い
+                    // リクエスト成功時
                     case .success(let value):
                         if let result = self?.parseJSON(value) {
                             observer.onNext(result)
@@ -35,7 +37,7 @@ class gooConvertAPIModel {
                             let error = self?.openError(value)
                             observer.onError(Exception.generic(message: error!))
                         }
-        
+                    // リクエスト失敗時
                     case .failure(let error):
                         observer.onError(error)
                 }
@@ -44,6 +46,7 @@ class gooConvertAPIModel {
         }
     }
     
+    // エラ〜メッセージをきれいに整える
     private func openError(_ json: Any) -> String {
         guard let error = json as? [String:Any] else { return "" }
         guard let description = error["error"] as? [String: Any] else { return "" }
@@ -52,6 +55,7 @@ class gooConvertAPIModel {
         return convertDescription
     }
     
+    // 英語のメッセージを日本語に変換する
     private func convertDescription(_ description: String) -> String {
         switch description {
         case "Invalid request parameter":
