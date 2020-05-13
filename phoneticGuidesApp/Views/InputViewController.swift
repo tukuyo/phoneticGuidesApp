@@ -88,12 +88,17 @@ class InputViewController: UIViewController {
     func initializeUI() {
         self.title = "ふりがなガイド"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
+        
         inputTextView.delegate = self
+        inputTextView.returnKeyType = UIReturnKeyType.done
+        
         view.backgroundColor = UIColor(named: "BackgroundColor")
+        
         view.addSubview(label)
         view.addSubview(convertButton)
         view.addSubview(inputTextView)
         view.addSubview(descriptionButton)
+        
         setUpLayout()
     }
     
@@ -186,6 +191,15 @@ extension InputViewController: UITextViewDelegate {
         if (self.inputTextView.isFirstResponder) {
             self.inputTextView.resignFirstResponder()
         }
+    }
+    
+    // 改行で閉じる
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return true
+        }
+        return true
     }
 }
 
