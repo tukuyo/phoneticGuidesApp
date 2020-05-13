@@ -2,6 +2,14 @@ name: Alamofire, nameSpecified:
 body: Copyright (c) 2014-2…
 version: 5.1.0
 
+name: AwesomeSpotlightView, nameSpecified: 
+body: Copyright (c) 2017 a…
+version: 0.1.10
+
+name: CDAlertView, nameSpecified: 
+body: Copyright (c) 2016 C…
+version: 0.10.0
+
 name: KMPlaceholderTextView, nameSpecified: 
 body: The MIT License (MIT…
 version: 1.4.0

@@ -20,6 +20,6 @@ class gooAPIClient: APIClient{
     
     // gooAPIClientに対してポストリクエストを送る関数
     func postRequest(_ parameters: [String: String]) -> DataRequest {
-        return AF.request(URL, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil)
+        return AF.request(URL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
     }
 }
