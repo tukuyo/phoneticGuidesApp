@@ -24,7 +24,6 @@ class OutputViewController: UIViewController {
         $0.font = UIFont.systemFont(ofSize: 20)
         $0.isEditable = false
         $0.sizeToFit()
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     // クリップボードにコピーするボタン．
@@ -34,7 +33,6 @@ class OutputViewController: UIViewController {
         $0.setTitleColor(UIColor(named: "buttonString"), for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         $0.layer.cornerRadius = 20
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     var outputViewModel: OutputViewModel!

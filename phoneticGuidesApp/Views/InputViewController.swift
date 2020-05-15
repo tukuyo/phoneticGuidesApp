@@ -21,7 +21,6 @@ class InputViewController: UIViewController {
     let label = UILabel().then {
         $0.text = "テキストを変換"
         $0.font = UIFont.systemFont(ofSize: 20.0)
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     // 変換するボタン
     let convertButton = UIButton(type: .system).then {
@@ -30,7 +29,6 @@ class InputViewController: UIViewController {
         $0.setTitleColor(UIColor(named: "buttonString"), for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         $0.layer.cornerRadius = 20
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     // 説明を表示するためのボタン
     let descriptionButton = UIButton(type: .system).then {
@@ -39,7 +37,6 @@ class InputViewController: UIViewController {
         $0.setTitleColor(UIColor(named: "buttonString"), for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         $0.layer.cornerRadius = 20
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     // 変換する前の文章
     let inputTextView = KMPlaceholderTextView().then {
@@ -51,7 +48,6 @@ class InputViewController: UIViewController {
         $0.layer.cornerRadius = 10
         $0.layer.borderColor = UIColor(named: "border")?.cgColor
         $0.layer.borderWidth = 3
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     
@@ -82,6 +78,7 @@ class InputViewController: UIViewController {
                 inputTextView.layer.borderColor = UIColor(named: "border")?.cgColor
             }
         }
+        
     }
     
     // UI初期化
@@ -228,6 +225,8 @@ extension InputViewController: AwesomeSpotlightViewDelegate {
 
         
         spotlightView = AwesomeSpotlightView(frame: view.frame, spotlight: [inputTextViewSpotlight, convertButtonSpotlight, descriptionButtonSpotSpotlight,])
+        
+        spotlightView.continueButtonModel.backgroundColor = UIColor(named: "BackgroundColor")
         spotlightView.cutoutRadius = 8
         spotlightView.delegate = self
     }
