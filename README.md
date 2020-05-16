@@ -35,7 +35,7 @@ pod install
 本アプリでは、[gooラボのAPI](https://labs.goo.ne.jp/api/jp/hiragana-translation/)を利用しています．　  
 そのため、事前にgooラボAPI[利用登録](https://labs.goo.ne.jp/jp/apiregister/)をしAPIキー(アプリケーションID)を取得してください．
 
-取得後、プロジェクト内のAPI_KEY.switf内の****の部分にAPIキー(アプリケーションID)貼り付けてください．
+取得後、プロジェクト内のAPI_KEY.swift内の****の部分にAPIキー(アプリケーションID)貼り付けてください．
 ```
 let API_KEY = "*******"
 ```
