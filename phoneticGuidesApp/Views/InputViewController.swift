@@ -105,6 +105,7 @@ class InputViewController: UIViewController {
     }
     
     // Layout
+    // PLEASE FIX: 横画面対応をするために、縦画面時ボタンの大きさが大きくなったので修正する必要がある．
     func setUpLayout() {
         label.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).inset(10)
@@ -114,21 +115,21 @@ class InputViewController: UIViewController {
         
         inputTextView.snp.makeConstraints {
             $0.top.equalTo(label.snp.top).inset(30)
-            $0.height.equalTo(view.safeAreaLayoutGuide).multipliedBy(0.6)
+            $0.height.equalTo(view.safeAreaLayoutGuide).multipliedBy(0.5)
             $0.width.equalTo(view.safeAreaLayoutGuide).inset(30)
             $0.centerX.equalTo(view)
         }
         
         convertButton.snp.makeConstraints {
             $0.width.equalTo(view.safeAreaLayoutGuide).inset(20)
-            $0.height.equalTo(50)
-            $0.top.equalTo(inputTextView.snp.bottom).inset(-30)
+            $0.top.equalTo(inputTextView.snp.bottom).inset(-10)
+            $0.bottom.equalTo(descriptionButton.snp.top).inset(-10)
             $0.centerX.equalTo(view)
         }
         
         descriptionButton.snp.makeConstraints {
             $0.width.height.centerX.equalTo(convertButton)
-            $0.top.equalTo(convertButton.snp.bottom).inset(-30)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(30)
         }
     }
     
