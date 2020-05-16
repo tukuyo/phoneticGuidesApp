@@ -146,11 +146,8 @@ class InputViewController: UIViewController {
     }
     
     
-    // 次の画面へ遷移し、変換後のテキストを表示
-    // FIX: どうの方法でコードベースで遷移先に飛ばせば良いのか？
     func willShow(result: Result) {
-        let vc = OutputViewController()
-        vc.outputViewModel = OutputViewModel(with: result)
+        let vc = OutputViewController(OutputViewModel(with: result))
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

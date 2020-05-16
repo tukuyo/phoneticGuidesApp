@@ -35,15 +35,23 @@ class OutputViewController: UIViewController {
         $0.layer.cornerRadius = 20
     }
     
-    var outputViewModel: OutputViewModel!
+    let outputViewModel: OutputViewModel!
     let disposeBag = DisposeBag()
     
+    init(_ viewModel: OutputViewModel) {
+        outputViewModel = viewModel
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initializeUI()
-        initializeViewModel()
         bindViewModel()
     }
     
@@ -63,13 +71,6 @@ class OutputViewController: UIViewController {
         view.addSubview(outputTextView)
         view.addSubview(copyButton)
         setUpLayout()
-    }
-    
-    // ViewModelの初期化
-    // NOTE: 必ずこのビューに来る際には、outputViewModelが渡されるので必要がない気がするが...
-    func initializeViewModel() {
-        guard outputViewModel == nil else { return }
-        outputViewModel = OutputViewModel()
     }
     
     // Layout
