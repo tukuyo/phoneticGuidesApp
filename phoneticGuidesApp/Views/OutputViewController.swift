@@ -35,7 +35,7 @@ class OutputViewController: UIViewController {
         $0.layer.cornerRadius = 20
     }
     
-    let outputViewModel: OutputViewModel!
+    let outputViewModel: OutputViewModel
     let disposeBag = DisposeBag()
     
     init(_ viewModel: OutputViewModel) {
