@@ -52,4 +52,4 @@ let API_KEY = "*******"
 
 ## Author
  - [HP](https://tukuyo.net/)
- - [Twitte](https://twitter.com/tukutuku_tukuyo)
+ - [Twitter](https://twitter.com/tukutuku_tukuyo)
