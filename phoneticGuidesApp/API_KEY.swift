@@ -11,4 +11,4 @@
 
 
 //  以下の*******の部分に発行されたAPI_KEYを入力してください．
-let API_KEY = "*******"
+let API_KEY = "4f43e53985f3acc3c0242ca49327a77f6c9f950e83deb757a805cfb7da27262d"

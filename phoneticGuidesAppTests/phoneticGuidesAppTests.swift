@@ -8,40 +8,61 @@
 
 import XCTest
 import RxSwift
+import RxTest
 @testable import phoneticGuidesApp
 
 class phoneticGuidesAppTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var vc: InputViewController!
+    var scheduler: TestScheduler!
+    var disposeBag: DisposeBag!
+    
+    override func setUp() {
+        vc = InputViewController()
+        scheduler = TestScheduler(initialClock: 0)
+        disposeBag = DisposeBag()
     }
-
-    override func tearDownWithError() throws {
+    
+    override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
     }
 
-    func testExample() throws {
+    func test_InputViewControllerTitle() {
+        let window = UIWindow()
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        XCTAssertEqual(vc.title, "ふりがなガイド")
+    }
+    
+    func test_convertButtonToNextView() {
+        vc.viewDidLoad()
+        let window = UIWindow()
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        vc.inputTextView.text = "お仕事ください．Please give me a job."
+        let exp = XCTestExpectation(description: "A")
+        wait(for: [exp], timeout: 10)
+        vc.convertButton.sendActions(for: .touchUpInside)
+        
+        
+//        let viewmodel = vc.inputViewModel
+//        let tapButtonEvent = scheduler.createHotObservable([
+//            next(10, ()),
+//            next(20, ()),
+//            next(30, ()),
+//            next(40, ())
+//        ]).asDriver(onErrorJustReturn: {}())
+//
+//        tapButtonEvent.bind(to: viewmodel.Input.convertTrigger)
+//            .disposed(by: disposeBag)
+        
+        XCTAssertTrue(vc.presentedViewController is OutputViewController)
         
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
     
-    func testAPIClient() throws {
-//        let client = gooConvertAPIModel()
-//        let text = ["鮑","栗","雷","粉骨砕身","昇竜拳","ABCD"]
-//        let Answer = ["あわび","くり","かみなり","ふんこつさいしん","しょうりゅうけん","えーびーしーでぃー"]
-//        
-//        for (i,v) in text.enumerated() {
-//            let result = client.convertText(v)
-//            print("#1->",  result)
-//            // テストを書く勉強をする
-//        }
-    }
+    
+    
 }
 

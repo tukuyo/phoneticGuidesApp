@@ -7,6 +7,7 @@ target 'phoneticGuidesApp' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxTest'
   pod 'Alamofire'
   pod 'Then'
   pod 'SnapKit', '~>5.0.0'
@@ -16,16 +17,21 @@ target 'phoneticGuidesApp' do
   pod "CDAlertView"
   pod 'SwiftyOverlay'
   pod 'LicensePlist'
+  
+  target 'phoneticGuidesAppTests' do
+    inherit! :search_paths
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxTest'
+    pod 'RxBlocking'
+  end
+
+  target 'phoneticGuidesAppUITests' do
+      # Pods for testing
+  end
+  
 
 end
 
 
-target 'phoneticGuidesAppTests' do
-  pod 'RxSwift'
-  pod 'RxCocoa'
-      
-end
 
-target 'phoneticGuidesAppUITests' do
-    # Pods for testing
-end

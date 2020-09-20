@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64877548D025CA90DBC4653C /* Pods_phoneticGuidesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */; };
+		864F7710C72E5CB2E02A74C2 /* Pods_phoneticGuidesApp_phoneticGuidesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD7BA831C0789BD91B1694F /* Pods_phoneticGuidesApp_phoneticGuidesAppUITests.framework */; };
 		8E4884FC2466A47600EADEA2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E4884FB2466A47600EADEA2 /* Settings.bundle */; };
 		8E4885002466DD9400EADEA2 /* API_KEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4884FF2466DD9400EADEA2 /* API_KEY.swift */; };
 		8EE563C92467D81400A5716F /* gooAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE563C82467D81400A5716F /* gooAPIClient.swift */; };
@@ -48,8 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EF1B9AA25695FEBAE92FBB /* Pods-phoneticGuidesApp-phoneticGuidesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesApp-phoneticGuidesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesApp-phoneticGuidesAppUITests/Pods-phoneticGuidesApp-phoneticGuidesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0674BB72EDF5D09E40F7B955 /* Pods-phoneticGuidesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesApp.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		176876B769DD48577A47EB33 /* Pods-phoneticGuidesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppTests.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		19DAB64822BF51CB3E018222 /* Pods-phoneticGuidesApp-phoneticGuidesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesApp-phoneticGuidesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesApp-phoneticGuidesAppUITests/Pods-phoneticGuidesApp-phoneticGuidesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4689D7DB04EF506842C20228 /* Pods_phoneticGuidesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppUITests/Pods-phoneticGuidesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		665046BBCDDBBA29602A51F0 /* Pods-phoneticGuidesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppTests/Pods-phoneticGuidesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,10 +79,10 @@
 		8EEF57A924657E43002A580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EFE71672466F1F100F102E6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8EFE71692466F7C600F102E6 /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
-		BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8398C39B08CD7FE733F99B5 /* Pods-phoneticGuidesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesAppUITests/Pods-phoneticGuidesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D838FA1E6FAF5157B4C51FE6 /* Pods-phoneticGuidesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phoneticGuidesApp.release.xcconfig"; path = "Target Support Files/Pods-phoneticGuidesApp/Pods-phoneticGuidesApp.release.xcconfig"; sourceTree = "<group>"; };
 		DFE8EFE63CB9C4973EC0F376 /* Pods_phoneticGuidesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD7BA831C0789BD91B1694F /* Pods_phoneticGuidesApp_phoneticGuidesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phoneticGuidesApp_phoneticGuidesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64877548D025CA90DBC4653C /* Pods_phoneticGuidesAppUITests.framework in Frameworks */,
+				864F7710C72E5CB2E02A74C2 /* Pods_phoneticGuidesApp_phoneticGuidesAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +122,8 @@
 				176876B769DD48577A47EB33 /* Pods-phoneticGuidesAppTests.release.xcconfig */,
 				47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */,
 				C8398C39B08CD7FE733F99B5 /* Pods-phoneticGuidesAppUITests.release.xcconfig */,
+				19DAB64822BF51CB3E018222 /* Pods-phoneticGuidesApp-phoneticGuidesAppUITests.debug.xcconfig */,
+				04EF1B9AA25695FEBAE92FBB /* Pods-phoneticGuidesApp-phoneticGuidesAppUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -129,7 +133,7 @@
 			children = (
 				4689D7DB04EF506842C20228 /* Pods_phoneticGuidesApp.framework */,
 				DFE8EFE63CB9C4973EC0F376 /* Pods_phoneticGuidesAppTests.framework */,
-				BEA183293ED6D1C461747C9D /* Pods_phoneticGuidesAppUITests.framework */,
+				ECD7BA831C0789BD91B1694F /* Pods_phoneticGuidesApp_phoneticGuidesAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,6 +285,7 @@
 				8EEF579F24657E43002A580A /* Sources */,
 				8EEF57A024657E43002A580A /* Frameworks */,
 				8EEF57A124657E43002A580A /* Resources */,
+				26DC3881D95F0410D5FFC770 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,7 +304,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = tukuyo;
 				TargetAttributes = {
 					8EEF578124657E43002A580A = {
@@ -363,6 +368,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26DC3881D95F0410D5FFC770 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesApp-phoneticGuidesAppUITests/Pods-phoneticGuidesApp-phoneticGuidesAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesApp-phoneticGuidesAppUITests/Pods-phoneticGuidesApp-phoneticGuidesAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phoneticGuidesApp-phoneticGuidesAppUITests/Pods-phoneticGuidesApp-phoneticGuidesAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2F486D8C357C3B6A2762CCD0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,7 +495,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-phoneticGuidesAppUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-phoneticGuidesApp-phoneticGuidesAppUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -572,6 +594,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -632,6 +655,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -748,9 +772,9 @@
 		};
 		8EEF57B324657E43002A580A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47A9DDA513CDAAB0A82A0232 /* Pods-phoneticGuidesAppUITests.debug.xcconfig */;
+			baseConfigurationReference = 19DAB64822BF51CB3E018222 /* Pods-phoneticGuidesApp-phoneticGuidesAppUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXA6U83V29;
 				INFOPLIST_FILE = phoneticGuidesAppUITests/Info.plist;
@@ -769,9 +793,9 @@
 		};
 		8EEF57B424657E43002A580A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8398C39B08CD7FE733F99B5 /* Pods-phoneticGuidesAppUITests.release.xcconfig */;
+			baseConfigurationReference = 04EF1B9AA25695FEBAE92FBB /* Pods-phoneticGuidesApp-phoneticGuidesAppUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXA6U83V29;
 				INFOPLIST_FILE = phoneticGuidesAppUITests/Info.plist;

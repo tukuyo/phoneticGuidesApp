@@ -39,10 +39,10 @@ class InputViewModel: ViewModelType {
         let description = input.descriptionTrigger.do()
         let converted = input.convertTrigger
             .withLatestFrom(input.text)
-            .flatMapLatest { [unowned self] content in
-                return self.apiModel.convertText(content)
-                    .trackError(state.error)
-                    .asDriverOnErrorJustComplete()
+            .flatMapLatest { [weak self] content in
+                return (self?.apiModel.convertText(content)
+                            .trackError(state.error)
+                            .asDriverOnErrorJustComplete())!
             }
         return InputViewModel.Output(descriptionButton: description,
                                      convertedText: converted,

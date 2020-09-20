@@ -46,7 +46,7 @@ class gooConvertAPIModel {
         }
     }
     
-    // エラ〜メッセージをきれいに整える
+    // エラーメッセージをきれいに整える
     private func openError(_ json: Any) -> String {
         guard let error = json as? [String:Any] else { return "" }
         guard let description = error["error"] as? [String: Any] else { return "" }

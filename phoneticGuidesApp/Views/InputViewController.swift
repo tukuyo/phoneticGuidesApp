@@ -63,6 +63,9 @@ class InputViewController: UIViewController {
         initializeUI()
         initializeViewModel()
         bindViewModel()
+        
+        
+        inputTextView.text = "AAAAA"
     }
     
     override func viewDidAppear(_ animated: Bool) {
